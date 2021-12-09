@@ -6,3 +6,43 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.options-cont {
+    height: 3rem;
+    width: 3rem;
+    background-color: #7efff5;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.tools-cont {
+    height: 35rem;
+    width: 3rem;
+    background-color: #7efff5;
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 1.5em;
+    box-shadow: rgba(30, 51, 61, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.tools-cont > * {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
