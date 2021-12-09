@@ -10,7 +10,7 @@ body {
 .options-cont {
     height: 3rem;
     width: 3rem;
-    background-color: #cfd7df;
+    background-color: #f1f2f6;
     position: absolute;
     top: 2rem;
     left: 2rem;
@@ -19,13 +19,13 @@ body {
     align-items: center;
     border-radius: 50%;
     font-size: 1.5em;
-    box-shadow: rgba(0, 0, 0, 3) 0px .5px 15px;
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
 }
 
 .tools-cont {
     height: 35rem;
     width: 3rem;
-    background-color: #cfd7df;
+    background-color: #f1f2f6;
     position: absolute;
     top: 8rem;
     left: 2rem;
@@ -35,7 +35,7 @@ body {
     align-items: center;
     border-radius: 2rem;
     font-size: 1.5em;
-    box-shadow: rgba(0, 0, 0, 3) 0px .5px 15px;
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
 }
 
 .tools-cont > * {
@@ -51,14 +51,14 @@ body {
 .pencil-tool-cont {
     height: 5rem;
     width: 9rem;
-    background-color: #cfd7df;
+    background-color: #f1f2f6;
     position: absolute;
     top: 9.5rem;
     left: 5rem;
 }
 
 .pencil-width-cont {
-    background-color: #cfd7df;
+    background-color: #f1f2f6;
     height: 2rem;
     display: flex;
     justify-content: center;
@@ -66,13 +66,12 @@ body {
 }
 
 .pencil-color-cont {
-    background-color: #cfd7df;
+    background-color: #f1f2f6;
     height: calc( 100% - 2rem );
     display: flex;
     justify-content: center;
     align-items: center; 
     gap: 1rem;
-    
 }
 
 .pencil-color {
@@ -95,7 +94,7 @@ body {
 .eraser-tool-cont {
     height: 2rem;
     width: 9rem;
-    background-color: #cfd7df;
+    background-color: #f1f2f6;
     display: flex;
     justify-content: center;
     align-items: center;
