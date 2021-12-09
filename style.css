@@ -10,7 +10,7 @@ body {
 .options-cont {
     height: 3rem;
     width: 3rem;
-    background-color: #7efff5;
+    background-color: #cfd7df;
     position: absolute;
     top: 2rem;
     left: 2rem;
@@ -19,13 +19,13 @@ body {
     align-items: center;
     border-radius: 50%;
     font-size: 1.5em;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    box-shadow: rgba(0, 0, 0, 3) 0px .5px 15px;
 }
 
 .tools-cont {
     height: 35rem;
     width: 3rem;
-    background-color: #7efff5;
+    background-color: #cfd7df;
     position: absolute;
     top: 8rem;
     left: 2rem;
@@ -35,7 +35,7 @@ body {
     align-items: center;
     border-radius: 2rem;
     font-size: 1.5em;
-    box-shadow: rgba(30, 51, 61, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    box-shadow: rgba(0, 0, 0, 3) 0px .5px 15px;
 }
 
 .tools-cont > * {
@@ -45,4 +45,48 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* pencil tool */
+.pencil-tool-cont {
+    height: 5rem;
+    width: 9rem;
+    background-color: #cfd7df;
+    position: absolute;
+    top: 9.5rem;
+    left: 5rem;
+}
+
+.pencil-width-cont {
+    background-color: #cfd7df;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pencil-color-cont {
+    background-color: #cfd7df;
+    height: calc( 100% - 2rem );
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+    
+}
+
+.pencil-color {
+    border-radius: .5rem;
+    width: 1.5rem;
+    height: 1rem;
+}
+
+.black {
+    background-color: black;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
 }
