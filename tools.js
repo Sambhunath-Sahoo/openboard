@@ -133,3 +133,28 @@ function dragAndDrop(element, event) {
         element.onmouseup = null;
     };
 }
+
+// upload sticky with an image
+upload.addEventListener("click", (e) => {
+    // Open file explorer
+    let input = document.createElement("input");
+    input.setAttribute("type", "file");
+    input.click();
+
+    input.addEventListener("change", (e) => {
+        let file = input.files[0];
+        let url = URL.createObjectURL(file);
+
+        let stickyTemplateHTML = `
+        <div class="header-cont">
+            <div class="minimize"></div>
+            <div class="remove"></div>
+        </div>
+        <div class="note-cont">
+            <img src="${url}"/>
+        </div>
+        `;
+        createSticky(stickyTemplateHTML);
+    })
+})
+
