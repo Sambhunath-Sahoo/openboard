@@ -66,6 +66,7 @@ body {
     width: 9rem;
     background-color: #f1f2f6;
     position: absolute;
+    display: none;
     top: 9.5rem;
     left: 5rem;
 }
@@ -108,7 +109,7 @@ body {
     height: 2rem;
     width: 9rem;
     background-color: #f1f2f6;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
