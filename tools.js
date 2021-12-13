@@ -53,3 +53,35 @@ eraser.addEventListener("click", (e) => {
     if (eraserFlag) eraserToolCont.style.display = "flex";
     else eraserToolCont.style.display = "none";
 });
+
+sticky.addEventListener("click", (e) => {
+    let stickyTemplateHTML = `
+    <div class="header-cont">
+        <div class="minimize"></div>
+        <div class="remove"></div>
+    </div>
+    <div class="note-cont">
+        <textarea spellcheck="false"></textarea>
+    </div>
+    `;
+
+    createSticky(stickyTemplateHTML);
+});
+function createSticky(stickyTemplateHTML) {
+    let stickyCont = document.createElement("div");
+    stickyCont.setAttribute("class", "sticky-cont");
+    stickyCont.innerHTML = stickyTemplateHTML;
+    document.body.appendChild(stickyCont);
+
+    let minimize = stickyCont.querySelector(".minimize");
+    let remove = stickyCont.querySelector(".remove");
+    noteActions(minimize, remove, stickyCont);
+
+    stickyCont.onmousedown = function (event) {
+        dragAndDrop(stickyCont, event);
+    };
+
+    stickyCont.ondragstart = function () {
+        return false;
+    };
+}
